@@ -1,0 +1,44 @@
+#question-container,
+#guide-container {}
+
+#question-title,
+#guide-title {
+    font-size: 0.9em;
+    color: white;
+    background-color: #474dd6;
+    padding: 0.5em;
+}
+
+#question-question,
+#question-guide {
+    padding: 0.5em;
+    background-color: #fff7e8;
+
+
+}
+
+code {
+    background-color: black;
+    padding: 0.8em;
+    width: 100%;
+    display: flex;
+    color: rgb(0, 255, 0) !important;
+}
+
+#nav {
+    background-color: #474dd6;
+    color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: #474dd6;
+}
+
+a:hover {
+
+    color: red;
+}

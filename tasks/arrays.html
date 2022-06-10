@@ -1,0 +1,131 @@
+<!-- UPREACH SKILL recording SCOTT JONES -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <title>Learn JS</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="nav">
+            <div class="row">
+                <div class="col">
+                    <a href="../index.html">
+                        Learn JS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <pre>
+    Copy the JS Contents into the console to experiment with it
+
+    A JS array can contain multiple types.
+     - number
+     - string
+     - boolean
+     - null
+     - undefined
+     - object 
+    <code>let exampleArray = [32,56,766,'LS2 87GH','12a road place', {id:2, description: "Sonos Speaker", volume: 5, delivered: true}, false, null, undefined ];</code>
+
+    
+
+
+
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="q-cont">
+                    splice
+                </div>
+                <div class="q-cont">
+                    splice
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="question-container">
+                <div id="question-title">Task</div>
+                <div id="question-question"></div>
+            </div>
+            <div class="col" id="guide-container">
+                <div id="guide-title">JS Contents</div>
+                <div id="question-guide">
+                </div>
+                <div id="question-hint"></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="start">Start</button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+
+
+
+
+
+<script>
+
+    let currentQuestion;
+
+    const renderQuestionContainer = (question) => {
+        currentQuestion = question;
+        document.querySelector("#question-title").innerText = "Question " + question.id;
+        document.querySelector("#question-question").innerText = question.question;
+        document.querySelector("#question-guide").innerHTML = currentQuestion.hints.guide;
+    };
+
+
+
+
+
+
+
+
+    document.querySelector("#start").addEventListener("click", e => {
+        renderQuestionContainer(questions[0]);
+    });
+
+
+
+
+
+    console.stdlog = console.log.bind(console);
+    console.logs = [];
+    console.log = function () {
+        console.logs.push(Array.from(arguments));
+
+    }
+
+    let questions = [
+        { id: 1, question: "Find largest value in array", completed: false, hints: { tip: "", guide: "<code>let array = [54,2,35,85,32,12,67]; </code>" } },
+        { id: 2, question: "Find smallest value in array", completed: false },
+        { id: 3, question: "Find mean value in array", completed: false }
+    ];
+
+
+    let questionAnswers = [{
+        qid: 1, a: 12
+    }];
+</script>
+
+</html>
