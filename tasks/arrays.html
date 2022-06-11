@@ -26,36 +26,103 @@
     </div>
     <div class="container-fluid">
         <div class="row">
+            <div class="cont-title-header">Arrays</div>
             <div class="col">
                 <pre>
-    Copy the JS Contents into the console to experiment with it
+                    Copy the code and paste it into the console to experiment with it
 
-    A JS array can contain multiple types.
-     - number
-     - string
-     - boolean
+
+    A JS array can contain multiple data types.
+     - number (1,2,3,45,765)
+     - string ("I'm a string", 'Ditto')
+     - boolean (true, false)
      - null
      - undefined
-     - object 
-    <code>let exampleArray = [32,56,766,'LS2 87GH','12a road place', {id:2, description: "Sonos Speaker", volume: 5, delivered: true}, false, null, undefined ];</code>
+     - object ({productName: "Sonos Speaker", volume: 12})
 
+     
+    <code>let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
+
+    Arrays start at index [0]
+    <code>exampleArray[0]</code> = 32
+    <code>exampleArray[3]</code> = 'LS2 87GH'
+    <code>exampleArray.length</code> = 7 
+
+
+    exampleArray[exampleArray.length - 1] = undefined
     
-
-
-
+    exampleArray.push("newItem")
                 </pre>
             </div>
         </div>
+        <div>
+            Access elements within the array with
+            exampleArray[2]
+        </div>
+
+
+        <div>
+            COMMON ARRAY METHODS
+        </div>
         <div class="row">
-            <div class="col">
-                <div class="q-cont">
-                    splice
-                </div>
-                <div class="q-cont">
-                    splice
-                </div>
+            <div class="col-sm-2 q-cont-l">
+                Join
+            </div>
+            <div class="col q-cont-r">
+                <code>
+                    exampleArray.join(" - ");
+                </code>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-2 q-cont-l">
+                Filter
+            </div>
+            <div class="col q-cont-r">
+                <code>
+                exampleArray.filter(arrayItem => typeof (arrayItem) === "number");
+            </code>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 q-cont-l">
+                Splice
+            </div>
+            <div class="col q-cont-m">
+                <code>
+                exampleArray.splice(0,3);
+            </code>
+            </div>
+            <div class="col q-cont-r">
+                Modifies array to contain only contain items from [0] to [3] // First 3 items
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 q-cont-l">
+                Slice
+            </div>
+            <div class="col q-cont-m">
+                <code>
+                exampleArray.slice(0,3);
+            </code>
+            </div>
+            <div class="col q-cont-r">
+                Same as Splice but does NOT modify array
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 q-cont-l">
+                forEach
+            </div>
+            <div class="col q-cont-m">
+                <code>
+                exampleArray.forEach(arrayItem => {
+                console.log(isNaN(arrayItem));
+                });
+            </code>
+            </div>
+        </div>
+
     </div>
 
     <div class="container-fluid">
@@ -75,6 +142,12 @@
 
     <button id="start">Start</button>
 
+
+
+    <div id="further-reading">
+        <div>Further Reading</div>
+        <a href="https://www.w3schools.com/js/js_arrays.asp">w3schools</a>
+    </div>
     <script src="../js/script.js"></script>
 </body>
 
@@ -84,6 +157,20 @@
 
 
 <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     let currentQuestion;
 

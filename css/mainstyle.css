@@ -1,3 +1,7 @@
+* {
+    list-style-type: none;
+}
+
 #question-container,
 #guide-container {}
 
@@ -19,10 +23,10 @@
 
 code {
     background-color: black;
-    padding: 0.8em;
-    width: 100%;
-    display: flex;
+    padding: 0.4em;
+
     color: rgb(0, 255, 0) !important;
+    font-size: 0.8em !important;
 }
 
 #nav {
@@ -36,9 +40,41 @@ a {
     color: white;
     text-decoration: none;
     background-color: #474dd6;
+    padding: 0.1em;
+    display: inline-block;
+    width: 100px;
+    margin: 0.1em;
+    text-align: center;
+
 }
+
 
 a:hover {
 
-    color: red;
+    color: #f2b441;
+}
+
+
+.q-cont-l {
+    margin-bottom: 1em;
+    color: #474dd6;
+    font-weight: bold;
+}
+
+
+
+.q-cont-r {
+
+    margin-bottom: 1em;
+}
+
+.q-cont-m {
+    margin-bottom: 1em;
+}
+
+
+.cont-title-header {
+    margin-bottom: 1em;
+    color: #474dd6;
+    font-weight: bold;
 }
