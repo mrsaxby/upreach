@@ -4,7 +4,6 @@
 <html>
 
 <head>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -15,39 +14,37 @@
 <body>
     <div class="container-fluid">
         <div class="row" id="nav">
-            <div class="row">
-                <div class="col">
-                    <a href="index.html">
-                        Learn JS
-                    </a>
-                </div>
+            <div class="col p-0">
+                <a href="index.html" id="nav-title-link">
+                    Learn JS
+                </a>
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="cont-title-header">Prerequisites</div>
             <div class="col">
+                <div class="cont-title-header">Overview</div>
+                <p>This tutorial will explain some of the fundamental concepts of JavaScript</p>
                 <p>We will be using the console to complete the tutorial</p>
             </div>
             <div class="col">
-                <pre>
-    Open developer tools
-    
-    Keyboard: Ctrl + Shift + I, except
-    Internet Explorer and Edge: F12
-    macOS: ⌘ + ⌥ + I
+                <div class="cont-title-header">Open Console</div>
+                <p>1. Right click on page</p>
+                <p>2. Click inspect</p>
+                <p>3. Select the <b>Console</b> tab</p>
 
-    Alternatively:
-        - Right click on page
-        - Click inspect
-
-                </pre>
+                <div class="cont-title-header">Alternatively:</div>
+                <p>Keyboard: Ctrl + Shift + I </p>
+                <p>Internet Explorer / Edge: F12</p>
+                <p>macOS: ⌘ + ⌥ + I</p>
+                <p>Select the <b>Console</b> tab</p>
             </div>
         </div>
 
 
-        <div class="row">
+        <div class="row ">
             <div class="col">
                 <!--Variables
                 Conditionals if/case
@@ -57,44 +54,51 @@
                 objects
 
                 -->
-                <ul>
-                    <li>
-                        <a href="tasks/basics.html">Basics</a>
-                    </li>
-                    <li>
-                        <a href="tasks/functions.html">Functions</a>
-                    </li>
-                    <li>
-                        <a href="tasks/arrays.html">Arrays</a>
-                    </li>
-                </ul>
-
-
-
-
+                <div>
+                    <a href="tasks/basics.html" class="link-ref">Basics</a>
+                </div>
+                <div>
+                    <a href="tasks/functions.html" class="link-ref">Functions</a>
+                </div>
+                <div>
+                    <a href="tasks/arrays.html" class="link-ref">Arrays</a>
+                </div>
+                <div>
+                    <a href="tasks/loops.html" class="link-ref">Loops</a>
+                </div>
             </div>
+
+
             <div class="col">
-                <pre>
 
-    Developer Tools Overview:
+                <!---
+                <div class="cont-title-header">Developer Tools Overview:</div>
+                <div>Elements Tab</div>
+                <div>Inspect elements</div>
+                <div>Apply styling</div>
+                <div>Edit/delete elements</div>
+                <div>View Box Model</div>
 
-    Elements Tab
-    - Inspect elements
-    - Apply styling
-    - Edit/delete elements
-    - View Box Model
-
-    Console
-     - Displays output from running code
-     - Can query HTML elements
+                <div class="top-tip-container">
+                    <div class="top-tip-text">
+                        <a href="https://developer.chrome.com/docs/devtools/overview/">More
+                            Info</a>
+                    </div>
+                </div>
 
 
-    Network
-    - Used to see messages/files are sent to/from the server
-    - Shows what content has been received
+                <div class="cont-title-header">Console</div>
+                <div>Displays output from running code</div>
+                <div>Can query HTML elements</div>
 
-    The developer tools can inspect elements on the webpage
-                </pre>
+
+                Network<br />
+                - Used to see messages/files are sent to/from the server<br />
+                - Shows what content has been received<br />
+                <br />
+                The developer tools can inspect elements on the webpage
+                </p>
+                -->
             </div>
         </div>
     </div>

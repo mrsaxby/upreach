@@ -32,28 +32,36 @@
                 1. Code readability is key
                 2. You can write functions several ways
 
-                The
 
+                pass in parameters
 
-                <pre>
+                <code>
                     public function addUp(value1,value2) {
                         return value1+value2;
                     }
-                    
+                </code>
+                <code>
                     const addUp = (value1, value2) => {
                         return value1+value2;
                     }
-                    
+                </code>
+                <code>
+                    const addUp = (value1, value2) => value1+value2;
+                </code>
+                <code>
+                    addUp(10,5);
+                </code>
 
-                    ES6 syntax - Can ommit the return (prefered)
-                   const addUp = (value1, value2) => value1+value2;
-
-
-               </pre>
+                Call the function with: addUp(10,5); // 15
             </div>
         </div>
     </div>
 
+
+    Task:
+
+    Create a function that accepts three parameters
+    return these parameters as a string seperated by a "-"
 
 
     <script src="../js/script.js"></script>

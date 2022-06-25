@@ -26,106 +26,37 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="cont-title-header">Arrays</div>
             <div class="col">
+                All loops can do the same thing. Some improve readability.
 
-                Copy the code and paste it into the console to experiment with it
-                <br />
-                <br />
-                A JS array can contain multiple data types.
-                <br />
-                - number (1,2,3,45,765)
-                <br />
-                - string ("I'm a string", 'Ditto')
-                <br />
-                - boolean (true, false)
-                <br />
-                - null
-                <br />
-                - undefined
-                <br />
-                - object ({productName: "Sonos Speaker", volume: 12})
-                <br />
-                <br />
-                <code>let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
+                Tip:
+                For Loop - Useful when the collection size is known / how many times the loop will have to run
 
-                Arrays start at index [0]
-                <code>exampleArray[0]</code> = 32
-                <code>exampleArray[3]</code> = 'LS2 87GH'
-                <code>exampleArray.length</code> = 7
+                While Loops -
 
-
-                exampleArray[exampleArray.length - 1] = undefined
-
-                exampleArray.push("newItem")
-
+                Useful for searching. For instance navigating up the DOM until a specific element is found.
             </div>
-        </div>
-        <div>
-            Access elements within the array with
-            exampleArray[2]
-        </div>
-
-
-        <div>
-            COMMON ARRAY METHODS
         </div>
         <div class="row">
             <div class="col-sm-2 q-cont-l">
-                Join
+                For Loop
             </div>
             <div class="col q-cont-r">
+                <pre>
                 <code>
-                    exampleArray.join(" - ");
+                    for(let i=0;i&#60;10;i++) {
+                        console.log(i);
+                    }
                 </code>
+            </pre>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-2 q-cont-l">
-                Filter
+                While Loop
             </div>
             <div class="col q-cont-r">
-                <code>
-                exampleArray.filter(arrayItem => typeof (arrayItem) === "number");
-            </code>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                Splice
-            </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.splice(0,3);
-            </code>
-            </div>
-            <div class="col q-cont-r">
-                Modifies array to contain only contain items from [0] to [3] // First 3 items
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                Slice
-            </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.slice(0,3);
-            </code>
-            </div>
-            <div class="col q-cont-r">
-                Same as Splice but does NOT modify array
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                forEach
-            </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.forEach(arrayItem => {
-                console.log(isNaN(arrayItem));
-                });
-            </code>
+
             </div>
         </div>
 
@@ -197,7 +128,6 @@
     document.querySelector("#start").addEventListener("click", e => {
         renderQuestionContainer(questions[0]);
     });
-
 
 
 

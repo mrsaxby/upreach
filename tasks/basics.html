@@ -13,62 +13,78 @@
 <body>
     <div class="container-fluid">
         <div class="row" id="nav">
-            <div class="row">
-                <div class="col">
-                    <a href="../index.html">
-                        Learn JS
-                    </a>
-                </div>
+            <div class="col p-0">
+                <a href="index.html" id="nav-title-link">
+                    Learn JS
+                </a>
             </div>
         </div>
     </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="cont-title-header">Variables</div>
-
             <div class="col">
-                <pre>
-    Comments
-        Double slashes: // Are used for JS comments
-        The line will not be executed by the system
-
-        /*
-            This is a multi line comment
-            Content within (/* ... */)
-            Will not be executed
-        */
-
-        Comments are used for describing the code and commenting out some code
-
-        <code>//console.log("I wont run as I am commented out");</code>
-
-    Variables
-
-    let - Usual declaration
-    const - values that don't change (days, months, Pi etc.)
-    var - Similar to let (Try not to use) read more <a href="https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var" target="_blank">here</a>:
-
-    // Usually camelCase the variable name
-    let numberOfBoxes = 20;
-    
-
-    
-    const months = ['Jan','Feb','Mar'];
+                <div class="cont-title-header">Comments</div>
+                <div>Comment out a single line: Double slashes: //</div>
+                <div>Comment out multiple lines: Slashes with an asterix: /* Are used for JS comments */</div>
+                <div>The line(s) will not be executed</div>
+                <div>Comments are used for describing the code and preventing their execution</div>
 
 
-    Data Types
-    - number
-    - string
-    - boolean
-    - null
-    - undefined
-    - object 
+                <div class="code-container">
+                    <code>//console.log("I wont run as I am commented out");</code>
+                    <button class="run-button"
+                        onclick="//console.log('I wont run as I am commented out')">&#x2192;</button>
+                </div>
+
+                <div class="code-container">
+                    <code>console.log("I will run as I am not commented out");</code>
+                    <button class="run-button"
+                        onclick="console.log('I will run as I am not commented out')">&#x2192;</button>
+                </div>
 
 
 
 
-    ISNAN
-                </pre>
+                <div class="cont-title-header">Variables</div>
+                <div>let - Usual declaration</div>
+                <div>const - values that don't change (days, months, Pi etc.)</div>
+                <div>var - Similar to let (Try not to use) read more <a
+                        href="https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var"
+                        target="_blank">here</a>:
+                </div>
+                <div>
+                    <code>let dayOfTheWeek = "Monday";</code>
+                </div>
+
+                <div class="top-tip">Usually camelCase the variable name</div>
+
+                <div class="cont-title-header">Data Types</div>
+
+                <div>string</div>
+                <div>number</div>
+                <div>boolean</div>
+                <div>null</div>
+                <div>undefined</div>
+                <div>object</div>
+                <div>array</div>
+
+                const months = ['Jan','Feb','Mar'];
+
+
+                Data Types
+                - number
+                - string
+                - boolean
+                - null
+                - undefined
+                - object
+
+
+
+
+                ISNAN
+
             </div>
         </div>
 
