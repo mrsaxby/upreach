@@ -13,55 +13,89 @@
 <body>
     <div class="container-fluid">
         <div class="row" id="nav">
-            <div class="row">
-                <div class="col">
-                    <a href="../index.html">
-                        Learn JS
-                    </a>
-                </div>
+            <div class="col p-0">
+                <a href="../index.html" id="nav-title-link">
+                    Learn JS
+                </a>
             </div>
         </div>
     </div>
-
 
     <div class="container-fluid">
         <div class="row">
             <div class="cont-title-header">Functions</div>
             <div class="col">
+                <div>1. Code readability is key</div>
+                <div>2. The function can be written several ways but ultimately do the same thing</div>
 
-                1. Code readability is key
-                2. You can write functions several ways
 
+                <div class="code-container">
+                    <code>
+<pre>
+public function addUp(value1, value2) {
+    return value1+value2;
+}
+</pre>
+                    </code>
 
-                pass in parameters
+                </div>
 
-                <code>
-                    public function addUp(value1,value2) {
-                        return value1+value2;
-                    }
-                </code>
-                <code>
-                    const addUp = (value1, value2) => {
-                        return value1+value2;
-                    }
-                </code>
-                <code>
-                    const addUp = (value1, value2) => value1+value2;
-                </code>
-                <code>
-                    addUp(10,5);
-                </code>
+                <div class="code-container">
+                    <code>
+<pre>
+const addUp = (value1, value2) => {
+    return value1+value2;
+}
+</pre>
+                    </code>
+                </div>
 
-                Call the function with: addUp(10,5); // 15
+                <div class="code-container">
+                    <code>
+                        const addUp = (value1, value2) => value1+value2;
+                    </code>
+                </div>
+
+                <div class="code-container">
+                    Call the function by using the function name and passing in the parameters
+                    <code>addUp(10,5);</code>
+                    <button class="run-button"
+                        onclick="const addUp = (value1, value2) => value1+value2; console.log(addUp(10,5))">&#x2192;</button>
+                </div>
+
             </div>
         </div>
+
+
+        <div class="row">
+            <div class="cont-title-header-task">Next Step</div>
+            <div class="col">
+
+
+            </div>
+            <div class="col">
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cont-title-header-task">Task</div>
+            <div class="col">
+
+                Create a function that accepts three parameters
+                return these parameters as a string seperated by a "-"
+
+            </div>
+            <div class="col">
+
+
+            </div>
+        </div>
+
     </div>
 
 
-    Task:
-
-    Create a function that accepts three parameters
-    return these parameters as a string seperated by a "-"
 
 
     <script src="../js/script.js"></script>

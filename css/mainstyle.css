@@ -37,8 +37,7 @@
 
 
 .code-container {
-    margin: 1em 0;
-
+    margin-bottom: 1em;
 }
 
 
@@ -106,8 +105,21 @@
 
 code {
     display: inline-block;
-
     background-color: rgb(234, 234, 234);
     padding: 0.7em;
     font-size: 0.7em;
+}
+
+
+
+pre {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+
+.cont-title-header-task {
+    margin-bottom: 1em;
+    color: #f2b441;
+    font-weight: bold;
 }

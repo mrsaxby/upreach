@@ -15,12 +15,10 @@
 <body>
     <div class="container-fluid">
         <div class="row" id="nav">
-            <div class="row">
-                <div class="col">
-                    <a href="../index.html">
-                        Learn JS
-                    </a>
-                </div>
+            <div class="col p-0">
+                <a href="../index.html" id="nav-title-link">
+                    Learn JS
+                </a>
             </div>
         </div>
     </div>
@@ -28,26 +26,24 @@
         <div class="row">
             <div class="cont-title-header">Arrays</div>
             <div class="col">
+                <div>
+                    A JS array can contain multiple data types.
+                </div>
 
-                Copy the code and paste it into the console to experiment with it
-                <br />
-                <br />
-                A JS array can contain multiple data types.
-                <br />
-                - number (1,2,3,45,765)
-                <br />
-                - string ("I'm a string", 'Ditto')
-                <br />
-                - boolean (true, false)
-                <br />
-                - null
-                <br />
-                - undefined
-                <br />
-                - object ({productName: "Sonos Speaker", volume: 12})
-                <br />
-                <br />
-                <code>let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
+                <div class="code-container">
+                    <code>let exampleArray = [32, 56, 766, 'LS2 87GH', '12a road place', false, undefined];</code>
+                    <button class="run-button"
+                        onclick="let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray)">&#x2192;</button>
+                </div>
+
+                <div>
+
+                    <div class="code-container">
+                        <code>exampleArray[0]</code>
+                        <button class="run-button"
+                            onclick="let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[0])">&#x2192;</button>
+                    </div>
+                </div>
 
                 Arrays start at index [0]
                 <code>exampleArray[0]</code> = 32
