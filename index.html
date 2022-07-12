@@ -12,95 +12,109 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row" id="nav">
-            <div class="col p-0">
-                <a href="index.html" id="nav-title-link">
-                    Learn JS
-                </a>
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container-fluid p-0">
+            <a href="index.html" id="nav-title-link">
+                Learn JS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="tasks/functions.html" class="dropdown-item">Functions</a></li>
+                            <li><a href="tasks/arrays.html" class="dropdown-item">Arrays</a></li>
+                            <li><a href="tasks/loops.html" class="dropdown-item">Loops</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <div class="cont-title-header">Overview</div>
-                <div>This tutorial will explain some of the fundamental concepts of JavaScript</div>
-                <div>We will be using the console to complete the tutorial</div>
-                <hr />
-                <div>If you get stuck <a href="https://www.google.com" target="_blank"><b>Google</b></a> it!</div>
+                <div class="mb-1">This tutorial covers some of the basics of JavaScript</div>
+                <div class="intro">
+                    <div> 1. Comments, variables, data types, debugging</div>
+                    <div> 2. Operands: +-/*, assigning values</div>
+                    <div> 3. Conditions</div>
+                    <div> 4. Loops</div>
+                    <div> 5. Functions</div>
+                </div>
+                <div class="mt-4">
+                    We will be using the developer tools console to complete the tutorial
+                </div>
             </div>
             <div class="col">
-                <div class="cont-title-header">Open Console</div>
-                <p>1. Right click on page</p>
-                <p>2. Click inspect</p>
-                <p>3. Select the <b>Console</b> tab</p>
-
+                <div class="cont-title-header">How to open the console</div>
+                <div class="intro">
+                    <p>1. Right click on page</p>
+                    <p>2. Click inspect</p>
+                    <p>3. Select the <b>Console</b> tab</p>
+                </div>
                 <div class="cont-title-header">Alternatively:</div>
-                <p>Keyboard: Ctrl + Shift + I </p>
-                <p>Internet Explorer / Edge: F12</p>
-                <p>macOS: ⌘ + ⌥ + I</p>
-                <p>Select the <b>Console</b> tab</p>
+                <div class="intro">
+                    <p>Keyboard: Ctrl + Shift + I </p>
+                    <p>Internet Explorer / Edge: F12</p>
+                    <p>macOS: ⌘ + ⌥ + I</p>
+                    <p>Select the <b>Console</b> tab</p>
+                </div>
+
+                <hr />
+
+                <div class="cont-title-header">Run code snippets:</div>
+
+                <div class="code-container">
+                    <code>let example = "This is an example";</code>
+                    <button class="run-button"
+                        onclick="let example = 'This is an example'; console.log(example)">&#x2192;</button>
+                </div>
             </div>
         </div>
-
-
-        <div class="row ">
+        <div class="row">
             <div class="col">
+                <div class="cont-title-header mt-5">Topics</div>
+
                 <!--Variables
                 Conditionals if/case
                 Functions
                 Arrays
                 Loops
                 objects
-
                 -->
-                <div>
-                    <a href="tasks/basics.html" class="link-ref">Basics</a>
-                </div>
-                <div>
-                    <a href="tasks/functions.html" class="link-ref">Functions</a>
-                </div>
-                <div>
-                    <a href="tasks/arrays.html" class="link-ref">Arrays</a>
-                </div>
-                <div>
-                    <a href="tasks/loops.html" class="link-ref">Loops</a>
-                </div>
+
+                <a href="tasks/basics.html" class="link-ref">Basics</a>
+                <a href="tasks/functions.html" class="link-ref">Functions</a>
+                <a href="tasks/arrays.html" class="link-ref">Arrays</a>
+                <a href="tasks/loops.html" class="link-ref">Loops</a>
             </div>
 
-
             <div class="col">
-
-                <!---
-                <div class="cont-title-header">Developer Tools Overview:</div>
-                <div>Elements Tab</div>
-                <div>Inspect elements</div>
-                <div>Apply styling</div>
-                <div>Edit/delete elements</div>
-                <div>View Box Model</div>
-
-                <div class="top-tip-container">
-                    <div class="top-tip-text">
-                        <a href="https://developer.chrome.com/docs/devtools/overview/">More
-                            Info</a>
-                    </div>
+                <!--    <div class="cont-title-header mt-5">Uses</div>
+                Document Object Model Manipulation
+                <div class="intro mb-5">
+                    JavaScript can be used to modify the webpage (DOM)
                 </div>
-
-
-                <div class="cont-title-header">Console</div>
-                <div>Displays output from running code</div>
-                <div>Can query HTML elements</div>
-
-
-                Network<br />
-                - Used to see messages/files are sent to/from the server<br />
-                - Shows what content has been received<br />
-                <br />
-                The developer tools can inspect elements on the webpage
-                </p>
-                -->
+                JavaScript Frameworks
+                <div class="intro mb-5">
+                    A JavaScript framework reduces the complexity of building web apps
+                </div>
+                Automation
+                <div class="intro mb-2 ">
+                    JavaScript can be used to replicate user interaction and test the website still functions as
+                    intended.
+                </div> -->
             </div>
         </div>
     </div>
@@ -108,12 +122,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
-
-
-
-
-
 
 </html>

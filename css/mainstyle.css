@@ -1,6 +1,7 @@
 /** DEFAULTS **/
 * {
     list-style-type: none;
+
 }
 
 .row {
@@ -11,15 +12,19 @@
 /** NAV **/
 #nav {
     background-color: #474dd6;
-    padding: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
 }
 
 #nav #nav-title-link {
     color: white;
     text-decoration: none;
+    margin-right: 1em;
 }
 
-
+.nav-link {
+    color: white;
+}
 
 
 /** CODE SECTIONS **/
@@ -72,27 +77,13 @@
 
 
 .link-ref:hover,
-#nav-title-link:hover {
+#nav-title-link:hover,
+.nav-link:hover,
+.nav-link:focus {
     color: #f2b441 !important;
 }
 
 
-.q-cont-l {
-    margin-bottom: 1em;
-    color: #474dd6;
-    font-weight: bold;
-}
-
-
-
-.q-cont-r {
-
-    margin-bottom: 1em;
-}
-
-.q-cont-m {
-    margin-bottom: 1em;
-}
 
 
 .cont-title-header {
@@ -108,6 +99,7 @@ code {
     background-color: rgb(234, 234, 234);
     padding: 0.7em;
     font-size: 0.7em;
+    min-width: 90%;
 }
 
 
@@ -122,4 +114,46 @@ pre {
     margin-bottom: 1em;
     color: #f2b441;
     font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* General text */
+.intro {
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+/**
+
+TOP TIP SECTION
+*/
+
+
+
+.top-tip-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #e33d59;
+    margin-top: 1em;
+    border-bottom: 2px solid #e33d59;
+}
+
+.top-tip-description {
+    font-size: 0.8em;
+    padding: 1em;
+    background-color: #fff7e8;
+
 }

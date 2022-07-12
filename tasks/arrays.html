@@ -4,7 +4,6 @@
 <html>
 
 <head>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -13,115 +12,169 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row" id="nav">
-            <div class="col p-0">
-                <a href="../index.html" id="nav-title-link">
-                    Learn JS
-                </a>
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container-fluid p-0">
+            <a href="../index.html" id="nav-title-link">
+                Learn JS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
+                            <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
+                            <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="cont-title-header">Arrays</div>
-            <div class="col">
-                <div>
+            <div class="col-sm-4">
+                <div class="intro">
                     A JS array can contain multiple data types.
+                    <div>The values in the array can be accessed by referring to the index</div>
                 </div>
-
+            </div>
+            <div class="col">
                 <div class="code-container">
-                    <code>let exampleArray = [32, 56, 766, 'LS2 87GH', '12a road place', false, undefined];</code>
+                    <code>const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
                     <button class="run-button"
-                        onclick="let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray)">&#x2192;</button>
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray)">&#x2192;</button>
                 </div>
-
-                <div>
-
-                    <div class="code-container">
-                        <code>exampleArray[0]</code>
-                        <button class="run-button"
-                            onclick="let exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[0])">&#x2192;</button>
-                    </div>
-                </div>
-
-                Arrays start at index [0]
-                <code>exampleArray[0]</code> = 32
-                <code>exampleArray[3]</code> = 'LS2 87GH'
-                <code>exampleArray.length</code> = 7
-
-
-                exampleArray[exampleArray.length - 1] = undefined
-
-                exampleArray.push("newItem")
-
             </div>
         </div>
-        <div>
-            Access elements within the array with
-            exampleArray[2]
-        </div>
 
-
-        <div>
-            COMMON ARRAY METHODS
-        </div>
         <div class="row">
-            <div class="col-sm-2 q-cont-l">
+            <div class="col-sm-4">
+                <span class="intro">Get the first element in the array
+                    <div>Indexes start at 0</div>
+                </span>
+
+            </div>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray[0]</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[0])">&#x2192;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="intro">Get the fourth element in the array</span>
+            </div>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray[3]</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[3])">&#x2192;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="intro">Count how many elements are in the array</span>
+            </div>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray.length</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.length)">&#x2192;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="intro">Get the last element in the array</span>
+            </div>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray[exampleArray.length - 1]</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[exampleArray.length - 1])">&#x2192;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
                 Join
+                <div class="intro">
+                    Concatenates the array into a string
+                </div>
             </div>
-            <div class="col q-cont-r">
-                <code>
-                    exampleArray.join(" - ");
-                </code>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray.join(" and ");</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.join(' and '))">&#x2192;</button>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-2 q-cont-l">
+            <div class="col-sm-4">
                 Filter
+                <div class="intro">
+                    Returns a new array filled with values that meet the criteria
+                </div>
             </div>
-            <div class="col q-cont-r">
-                <code>
-                exampleArray.filter(arrayItem => typeof (arrayItem) === "number");
-            </code>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                Splice
-            </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.splice(0,3);
-            </code>
-            </div>
-            <div class="col q-cont-r">
-                Modifies array to contain only contain items from [0] to [3] // First 3 items
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray.filter(arrayItem => typeof (arrayItem) === "number");</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.filter(arrayItem => typeof (arrayItem) === 'number'))">&#x2192;</button>
+                </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-2 q-cont-l">
+            <div class="col-sm-4">
                 Slice
+                <div class="intro">
+                    Returns a new array with selected values from the array
+                </div>
             </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.slice(0,3);
-            </code>
-            </div>
-            <div class="col q-cont-r">
-                Same as Splice but does NOT modify array
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray.splice(0,3);</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.splice(0,3))">&#x2192;</button>
+                </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-2 q-cont-l">
+            <div class="col-sm-4">
                 forEach
+                <div class="intro">
+                    Loops over each element within the array
+                </div>
             </div>
-            <div class="col q-cont-m">
-                <code>
-                exampleArray.forEach(arrayItem => {
-                console.log(isNaN(arrayItem));
-                });
-            </code>
+            <div class="col">
+                <div class="code-container">
+                    <code>exampleArray.forEach(arrayItem => {
+                        console.log(arrayItem));
+                        });</code>
+                    <button class="run-button"
+                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.forEach(arrayItem => {console.log(arrayItem)}))">&#x2192;</button>
+                </div>
             </div>
         </div>
 
@@ -151,65 +204,56 @@
         <a href="https://www.w3schools.com/js/js_arrays.asp">w3schools</a>
     </div>
     <script src="../js/script.js"></script>
+
+
+
+
+
+
+    <script>
+
+
+
+        let currentQuestion;
+
+        const renderQuestionContainer = (question) => {
+            currentQuestion = question;
+            document.querySelector("#question-title").innerText = "Question " + question.id;
+            document.querySelector("#question-question").innerText = question.question;
+            document.querySelector("#question-guide").innerHTML = currentQuestion.hints.guide;
+        };
+
+
+
+
+
+
+
+
+        document.querySelector("#start").addEventListener("click", e => {
+            renderQuestionContainer(questions[0]);
+        });
+
+
+
+
+
+
+
+        let questions = [
+            { id: 1, question: "Find largest value in array", completed: false, hints: { tip: "", guide: "<code>let array = [54,2,35,85,32,12,67]; </code>" } },
+            { id: 2, question: "Find smallest value in array", completed: false },
+            { id: 3, question: "Find mean value in array", completed: false }
+        ];
+
+
+        let questionAnswers = [{
+            qid: 1, a: 12
+        }];
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
-
-
-
-
-
-
-<script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    let currentQuestion;
-
-    const renderQuestionContainer = (question) => {
-        currentQuestion = question;
-        document.querySelector("#question-title").innerText = "Question " + question.id;
-        document.querySelector("#question-question").innerText = question.question;
-        document.querySelector("#question-guide").innerHTML = currentQuestion.hints.guide;
-    };
-
-
-
-
-
-
-
-
-    document.querySelector("#start").addEventListener("click", e => {
-        renderQuestionContainer(questions[0]);
-    });
-
-
-
-
-
-
-
-    let questions = [
-        { id: 1, question: "Find largest value in array", completed: false, hints: { tip: "", guide: "<code>let array = [54,2,35,85,32,12,67]; </code>" } },
-        { id: 2, question: "Find smallest value in array", completed: false },
-        { id: 3, question: "Find mean value in array", completed: false }
-    ];
-
-
-    let questionAnswers = [{
-        qid: 1, a: 12
-    }];
-</script>
 
 </html>
