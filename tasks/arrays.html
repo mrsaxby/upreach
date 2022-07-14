@@ -30,9 +30,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/operations.html" class="dropdown-item">Operands</a></li>
+                            <li><a href="../tasks/conditionals.html" class="dropdown-item">Conditionals</a></li>
                             <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
                             <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
                             <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                            <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -41,169 +44,219 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="cont-title-header">Arrays</div>
-            <div class="col-sm-4">
-                <div class="intro">
-                    A JS array can contain multiple data types.
-                    <div>The values in the array can be accessed by referring to the index</div>
+        <div id="tutorial-1">
+            <div class="row">
+                <div class="cont-title-header">Arrays</div>
+                <div class="col-sm-4">
+                    <div class="intro">
+                        A JS array can contain multiple data types.
+                        <div>The values in the array can be accessed by referring to the index</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray)">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined];</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray)">&#x2192;</button>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Get the first element in the array
+                        <div>Indexes start at 0</div>
+                    </span>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray[0]</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[0])">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Get the second element in the array
+                    </span>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray[1]</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[1])">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Get the third element in the array
+                    </span>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray[2]</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[2])">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Get the fourth element in the array</span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray[3]</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[3])">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Count how many elements are in the array</span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.length</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.length)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="intro">Get the last element in the array</span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray[exampleArray.length - 1]</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[exampleArray.length - 1])">&#x2192;</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="intro">Get the first element in the array
-                    <div>Indexes start at 0</div>
-                </span>
 
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray[0]</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[0])">&#x2192;</button>
+        <div id="tutorial-2" style="display: none;">
+            <div class="cont-title-header">Array methods</div>
+            <div class="row">
+                <div class="col-sm-4">
+                    join
+                    <div class="intro">
+                        Concatenates the array into a string
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.join(" and ");</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.join(' and '))">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    filter
+                    <div class="intro">
+                        Returns a new array filled with values that meet the criteria
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.filter(arrayItem => typeof (arrayItem) === "number");</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.filter(arrayItem => typeof (arrayItem) === 'number'))">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="intro">Get the fourth element in the array</span>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray[3]</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[3])">&#x2192;</button>
+            <div class="row">
+                <div class="col-sm-4">
+                    slice
+                    <div class="intro">
+                        Returns a new array with selected values from the array
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.splice(0,5);</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.splice(0,5))">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="intro">Count how many elements are in the array</span>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray.length</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.length)">&#x2192;</button>
+            <div class="row">
+                <div class="col-sm-4">
+                    forEach
+                    <div class="intro">
+                        Loops over each element within the array
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="intro">Get the last element in the array</span>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray[exampleArray.length - 1]</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray[exampleArray.length - 1])">&#x2192;</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                Join
-                <div class="intro">
-                    Concatenates the array into a string
-                </div>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray.join(" and ");</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.join(' and '))">&#x2192;</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                Filter
-                <div class="intro">
-                    Returns a new array filled with values that meet the criteria
-                </div>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray.filter(arrayItem => typeof (arrayItem) === "number");</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.filter(arrayItem => typeof (arrayItem) === 'number'))">&#x2192;</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                Slice
-                <div class="intro">
-                    Returns a new array with selected values from the array
-                </div>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray.splice(0,3);</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.splice(0,3))">&#x2192;</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                forEach
-                <div class="intro">
-                    Loops over each element within the array
-                </div>
-            </div>
-            <div class="col">
-                <div class="code-container">
-                    <code>exampleArray.forEach(arrayItem => {
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.forEach(arrayItem => {
                         console.log(arrayItem));
                         });</code>
-                    <button class="run-button"
-                        onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.forEach(arrayItem => {console.log(arrayItem)}))">&#x2192;</button>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.forEach(arrayItem => {console.log(arrayItem)}))">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    map
+                    <div class="intro">
+                        Calls a function on element within the array
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>exampleArray.map(arrayItem => "&#60;h1>"+arrayItem +"&#60;/h1>";</code>
+                        <button class="run-button"
+                            onclick="const exampleArray = [32,56,766,'LS2 87GH','12a road place', false, undefined]; console.log(exampleArray.map(arrayItem => '<h1>'+arrayItem +'</h1>')); ">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <h6>+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Many
+                    More</a></h3>
+        </div>
+
+        <!----- QUESTIONS ------>
+        <div id="tutorial-3" style="display: none;">
+            <div class="row">
+                <div class="col-sm-6" id="question-container">
+                    <div id="question-title">Task</div>
+                    <div id="question-question"></div>
+                    <button class="run-button mt-2 float-end" id="next-question"
+                        onclick="nextQuestion(this)">Next</button>
+                </div>
+                <div class="col-sm-6" id="guide-container">
+                    <div id="guide-title">Hints</div>
+                    <div id="question-guide"></div>
+                    <div id="question-hint"></div>
+                    <button class="run-button mt-2 float-end" id="hint" onclick="displayHint(this)">Hint</button>
                 </div>
             </div>
         </div>
 
+        <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
+        <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
+
     </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col" id="question-container">
-                <div id="question-title">Task</div>
-                <div id="question-question"></div>
-            </div>
-            <div class="col" id="guide-container">
-                <div id="guide-title">JS Contents</div>
-                <div id="question-guide">
-                </div>
-                <div id="question-hint"></div>
-            </div>
-        </div>
-    </div>
-
-    <button id="start">Start</button>
-
-
-
-    <div id="further-reading">
-        <div>Further Reading</div>
-        <a href="https://www.w3schools.com/js/js_arrays.asp">w3schools</a>
-    </div>
-    <script src="../js/script.js"></script>
 
 
 
@@ -211,46 +264,21 @@
 
 
     <script>
-
-
-
-        let currentQuestion;
-
-        const renderQuestionContainer = (question) => {
-            currentQuestion = question;
-            document.querySelector("#question-title").innerText = "Question " + question.id;
-            document.querySelector("#question-question").innerText = question.question;
-            document.querySelector("#question-guide").innerHTML = currentQuestion.hints.guide;
-        };
-
-
-
-
-
-
-
-
-        document.querySelector("#start").addEventListener("click", e => {
-            renderQuestionContainer(questions[0]);
-        });
-
-
-
-
-
-
-
-        let questions = [
-            { id: 1, question: "Find largest value in array", completed: false, hints: { tip: "", guide: "<code>let array = [54,2,35,85,32,12,67]; </code>" } },
-            { id: 2, question: "Find smallest value in array", completed: false },
-            { id: 3, question: "Find mean value in array", completed: false }
+        let currentTutorial = 1;
+        let numberOfTutorials = 3;
+        // Tasks
+        let currentQuestionIndex = -1;
+        let numberOfQuestions = 2;
+        let questionsArray = [
+            { id: 1, question: "Create an array with a mix of strings and numbers", hints: { guide: "<code>let array = ['string1', 12, 'string2', 432, 'string3'];</code>" } },
+            { id: 2, question: "Filter the array to only contain strings", hints: { guide: "<code>array = array.filter(arrayItem => typeof arrayItem == 'string');</code>" } },
+            { id: 3, question: "Add a bold tag <b> to each string element", hints: { guide: "<code>array.map(e => '&#60;b>'+e+'&#60;/b>');</code>" } },
         ];
-
-
-        let questionAnswers = [{
-            qid: 1, a: 12
-        }];
     </script>
+
+
+    <script src="../js/tutorial-carousel.js"></script>
+    <script src="../js/exercise-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>

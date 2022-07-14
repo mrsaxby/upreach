@@ -117,9 +117,9 @@ pre {
 }
 
 
-
-
-
+.template-tutorial {
+    min-height: 80vh !important;
+}
 
 
 
@@ -127,6 +127,14 @@ pre {
 /* General text */
 .intro {
     font-size: 0.8em;
+}
+
+#tutorial-1,
+#tutorial-2,
+#tutorial-3,
+#tutorial-4,
+#tutorial-5 {
+    min-height: 80vh;
 }
 
 

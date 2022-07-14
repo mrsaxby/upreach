@@ -37,6 +37,7 @@
                             <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
                             <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
                         </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -44,53 +45,80 @@
 
     <div class="container-fluid">
         <div id="tutorial-1">
+            <div class="cont-title-header">Objects</div>
             <div class="row">
-                <div class="cont-title-header">Functions</div>
                 <div class="col-sm-4">
-                    <div class="mb-1">Functions</div>
-                    <div class="intro mb-3">
-                        <div>Code readability is key</div>
-                        <div>The function can be written several ways but ultimately do the same thing</div>
-                        <div>If you find yourself writing code repeatedly that is the same then create a function to
-                            reduce the amount of code</div>
-                        <div>Acronym - DRY (Don't repeat yourself)</div>
-                        <div class="mt-4">Functions can be used for recursion (i.e) calling the function repeatedly to
-                            act as a loop</div>
+                    Objects
+                    <div class="intro">
+                        Initalise an object with curly braces: { volume: 20, speaker: "Alexa" }
+                        <br />
+                        Useful for accessing properties and storing data associativity
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="code-container">
                         <code>
 <pre>
-public function addUp(value1, value2) {
-    return value1+value2;
-}
+let obj = { volume: 20, speaker: "Alexa" };
+console.log(obj);
 </pre>
                         </code>
+                        <button class="run-button" onclick="let obj = { volume: 20, speaker: 'Alexa'  };
+                            console.log(obj);">&#x2192;</button>
                     </div>
+                </div>
+            </div>
 
+
+            <div class="row">
+                <div class="col-sm-4">
+                    Accessing object properties
+                    <div class="intro">
+                        Use the dot notation or array notation to access the properties
+                    </div>
+                </div>
+                <div class="col-sm-6">
                     <div class="code-container">
                         <code>
 <pre>
-const addUp = (value1, value2) => {
-    // good for multi line functions
-    return value1+value2;
-}
+let obj = { volume: 20, speaker: "Alexa" };
+console.log(obj.volume); // outputs value associated to volume
+console.log(obj["speaker"]); // outputs value associated to speaker
 </pre>
                         </code>
+                        <button class="run-button" onclick="let obj = { volume: 20, speaker: 'Alexa' };
+                            console.log(obj.volume); console.log(obj['speaker']);">&#x2192;</button>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    Array of objects
+                    <div class="intro">
+                        Access the object within the array with the index and then object property
+                    </div>
+                </div>
+                <div class="col-sm-6">
                     <div class="code-container">
                         <code>
 <pre>
-const addUp = (value1, value2) => return value1+value2;
+let objectArray = [
+    {number: 12, address: "Round lane", post_code: "XS12 07E" },
+    {number: 25, address: "Wood close", post_code: "TY27 8ER" },
+    {number: 2, address: "Otley road", post_code: "NE02 9AL" }
+];
+
+console.log(objectArray[1].post_code);
 </pre>
                         </code>
-                    </div>
-
-                    <div class="code-container">
-                        <code>addUp(10,5); // Calls the function and passes in the parameters</code>
-                        <button class="run-button"
-                            onclick="const addUp = (value1, value2) => value1+value2; console.log(addUp(10,5))">&#x2192;</button>
+                        <button class="run-button" onclick='let objectArray = [
+                        {number: 12, address: "Round lane", post_code: "XS12 07E" },
+                        {number: 25, address: "Wood close", post_code: "TY27 8ER" },
+                        {number: 2, address: "Otley road", post_code: "NE02 9AL" }
+                    ];
+                    
+                    console.log(objectArray[1].post_code);'>&#x2192;</button>
                     </div>
                 </div>
             </div>
@@ -118,8 +146,8 @@ const addUp = (value1, value2) => return value1+value2;
 
         <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
         <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
-    </div>
 
+    </div>
 
 
 
@@ -133,12 +161,8 @@ const addUp = (value1, value2) => return value1+value2;
         let currentQuestionIndex = -1;
         let numberOfQuestions = 1;
         let questionsArray = [
-            { id: 1, question: "Create a function that accepts three parameters using the 3rd function format. The function should multiply the first value by the second value and then the sum multiplied by the third", hints: { guide: "<code>const newMethod = (val1,val2,val3) => (val1*val2)*3;</code> " } },
-            {
-                id: 2, question: "Create a function that accepts one number parameter = 0 which calls itself until the value is over 10", hints: {
-                    guide: "<code><pre>let start = 1; \nconst recursion = (increment) => { \nif (increment <= 10) { \n  console.log(increment); \n  increment += 1; \n  recursion(increment++);\n} \nrecursion(start); \n </pre></code> "
-                }
-            }
+            { id: 1, question: "Create an object with a key and change the value of it", hints: { guide: '<code><pre>let obj = { name: "Exercise 1 started" }; \nobj.name = "Exercise 1 finished";\nconsole.log(obj);</pre></code> ' } },
+            { id: 2, question: "Create a rectangle object which has a width and height", hints: { guide: "<code><pre>const area = (w,h) => w*h;\nlet square = { width: 5, height: 8, area: area(5,8)};\nconsole.log(square.area)</pre></code>" } }
         ];
     </script>
 

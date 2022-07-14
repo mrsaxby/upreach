@@ -1,0 +1,421 @@
+<!-- UPREACH SKILL recording SCOTT JONES -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <title>Learn JS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container-fluid p-0">
+            <a href="../index.html" id="nav-title-link">
+                Learn JS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/operations.html" class="dropdown-item">Operands</a></li>
+                            <li><a href="../tasks/conditionals.html" class="dropdown-item">Conditionals</a></li>
+                            <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
+                            <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
+                            <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                            <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="tutorial-1">
+            <div class="row">
+                <div class="cont-title-header">Comparisons</div>
+                <div class="col-sm-4">
+                    <div class="mb-1">Equal to AND Equal data type</div>
+                    <div class="intro mb-3">
+                        Compares the value and the typeof value
+                        <br />
+                        Reduces bugs to use the three === comparisons
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>5 === 5 // true</code>
+                        <button class="run-button" onclick="console.log(5 === 5)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>5 === "5" // false</code>
+                        <button class="run-button" onclick="console.log(5 === '5')">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-1">Equal to</div>
+                    <div class="intro mb-3">
+                        Compares the value
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>5 == 5 // true</code>
+                        <button class="run-button" onclick="console.log(5 == 5)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>5 == "5" // true</code>
+                        <button class="run-button" onclick="console.log(5 == '5')">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-1">Not equal to OR not equal data type</div>
+                    <div class="intro mb-3">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>10 !== 5 // true</code>
+                        <button class="run-button" onclick="console.log(10 !== 5)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>10 !== "5" // true </code>
+                        <button class="run-button" onclick="console.log(10 !== '5')">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>10 !== "10" // true </code>
+                        <button class="run-button" onclick="console.log(10 !== '10')">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-1">Not equal to</div>
+                    <div class="intro mb-3">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>10 != 5 // true</code>
+                        <button class="run-button" onclick="console.log(10 != 5)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>10 != "5" // true </code>
+                        <button class="run-button" onclick="console.log(10 != '5')">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>10 != "10" // false </code>
+                        <button class="run-button" onclick="console.log(10 != '10')">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-1">Greater than / Less than</div>
+                    <div class="intro mb-3">
+                        Greater than and Less than can be rearranged to achieve the same outcome
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>14 &#60; 15 // 15 is greater 14</code>
+                        <button class="run-button" onclick="console.log(5 < 15)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>14 &#62; 15 // 14 is less than 15</code>
+                        <button class="run-button" onclick="console.log(5 < 15)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="mb-1">Greater than / Less than Equal to</div>
+                    <div class="intro mb-3">
+                        Checks if the values are equal and less/greater than
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>15 &#60; 15 // false</code>
+                        <button class="run-button" onclick="console.log(15 < 15)">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>15 &#60;= 15 // true</code>
+                        <button class="run-button" onclick="console.log(15 <= 15)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorial-2" style="display: none;">
+            <div class="row">
+                <div class="cont-title-header">Conditionals</div>
+                <div class="col-sm-6">
+                    if
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            checks if the statement is true
+                        </div>
+                        <div class="mb-1">
+                            Comment out multiple lines: Slashes with an asterix: /* Are used for JS comments */
+                        </div>
+                        The line(s) will not be executed
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+if(5 &#60; 10) {
+    console.log('The statement is true');
+    console.log(5 &#60; 10); // outputs true
+}
+</pre>
+                    </code>
+                        <button class="run-button" onclick="if(5 < 10) { 
+                            console.log('if statement is true');
+                            console.log(5 < 10);
+                        }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mt-5">
+                    if else
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            checks if the statement is true
+                            <br />
+                            if false run the else statement
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+if(15 &#60; 10) {
+    console.log('The if statement is true');
+    console.log(5 &#60; 10); // outputs true
+}
+else {
+    console.log('The if statement is false');
+    console.log(15 &#60; 10); // outputs false
+}
+</pre>
+                    </code>
+                        <button class="run-button" onclick="if(15 < 10) { 
+                            console.log('if statement is true');
+                            console.log(15 < 10);
+                        }
+                        else {
+                            console.log('The if statement is false');
+                            console.log(15 < 10);
+                        }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-6 mt-5">
+                    Switch statement
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            Similar to an if statement<br />
+                            Can improve code readability rather than having many if statements
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+let variable = 2
+switch (variable) {
+    case 1:
+        console.log("if variable == 1 call 1st function");
+        break;
+    case 2:
+    console.log("if variable == 2 call 2nd function");
+    break;
+}
+</pre>
+                    </code>
+                        <button class="run-button"
+                            onclick="let variable = 2
+                        switch (variable) {
+                            case 1:
+                              console.log(' if variable==1 call 1st function'); break; case 2: console.log('if variable==2 call 2nd function'); break; }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorial-3" style="display: none;">
+            <div class="row">
+                <div class="cont-title-header">Logical Operators</div>
+                <div class="col-sm-6">
+                    &&
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            AND
+                        </div>
+                        <div class="mb-1">
+                            Both statments must equal true for this condition to be ran
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+let variable = 25;
+if(variable > 10 && variable &#60; 30) {
+    console.log('The outcome is true as both statments are true');
+    console.log(25 > 10); // outputs true
+    console.log(25 &#60; 30); // outputs true
+}
+</pre>
+                    </code>
+                        <button class="run-button" onclick="let variable = 25;
+                        if(variable > 10 && variable < 30) {
+                            console.log('The outcome is true as both statments are true');
+                            console.log(25 > 10); // outputs true
+                            console.log(25 < 30); // outputs true
+                        }">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>
+<pre>
+let variable = 50;
+if(variable > 10 && variable &#60; 30) {
+    
+    
+else {
+    console.log('The outcome is false as only one of the statments are true');
+    console.log(50 > 10); // outputs true
+    console.log(50 &#60; 10); // outputs false
+}
+</pre>
+                    </code>
+                        <button class="run-button" onclick="let variable = 50;
+                        if(variable > 10 && variable < 30) {
+   
+                        }
+                        else {
+                            console.log('The outcome is false as only one of the statments are true');
+                            console.log(50 > 10); // outputs true
+                            console.log(50 < 10); // outputs false
+                        }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cont-title-header">Ternary operator</div>
+                <div class="col-sm-6">
+                    Ternary operator
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            Similar to an if else statement
+                            <br />
+                            Useful shorthand
+                        </div>
+                        <div class="mb-1">
+                            if(expression) ? true : false
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="code-container">
+                        <code>
+<pre>
+let variable = 50;
+if(variable > 10 || variable &#60; 30) {
+    console.log('The outcome is true as one of the statments == true');
+}
+
+variable > 10 && variable >= 50 ? 'More or equal to 50' : 'less than 10';
+</pre>
+                    </code>
+                        <button class="run-button"
+                            onclick="let variable = 50; variable > 10 && variable >= 50 ? console.log('More or equal to 50') : console.log('less than 10');">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----- QUESTIONS ------>
+        <div id="tutorial-4" style="display: none;">
+            <div class="row">
+                <div class="col-sm-6" id="question-container">
+                    <div id="question-title">Task</div>
+                    <div id="question-question"></div>
+                    <button class="run-button mt-2 float-end" id="next-question"
+                        onclick="nextQuestion(this)">Next</button>
+                </div>
+                <div class="col-sm-6" id="guide-container">
+                    <div id="guide-title">Hints</div>
+                    <div id="question-guide"></div>
+                    <div id="question-hint"></div>
+                    <button class="run-button mt-2 float-end" id="hint" onclick="displayHint(this)">Hint</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
+        <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let currentTutorial = 1;
+        let numberOfTutorials = 4;
+        // Tasks
+        let currentQuestionIndex = -1;
+        let numberOfQuestions = 2;
+        let questionsArray = [
+            { id: 1, question: "Create a variable and assign it a number", hints: { guide: "<code>let var1 = 24;</code>" } },
+            { id: 2, question: "Create an if statment to test if the variable is even or odd", hints: { guide: "<code>if(var1 % 2 == 0) {console.log('even')}else{console.log('odd')} </code>" } },
+            { id: 3, question: "Rewrite the if statement to use the ternary operator", hints: { guide: "<code>var1 % 2 == 0 ? 'even' : 'odd'; </code>" } },
+        ];
+    </script>
+
+
+    <script src="../js/tutorial-carousel.js"></script>
+    <script src="../js/exercise-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

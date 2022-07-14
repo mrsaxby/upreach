@@ -4,7 +4,6 @@
 <html>
 
 <head>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -13,137 +12,195 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container-fluid p-0">
+            <a href="../index.html" id="nav-title-link">
+                Learn JS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/operations.html" class="dropdown-item">Operands</a></li>
+                            <li><a href="../tasks/conditionals.html" class="dropdown-item">Conditionals</a></li>
+                            <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
+                            <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
+                            <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                            <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container-fluid">
-        <div class="row" id="nav">
+        <div id="tutorial-1">
+            <div class="cont-title-header">Loops</div>
             <div class="row">
-                <div class="col">
-                    <a href="../index.html">
-                        Learn JS
-                    </a>
+                <div class="col-sm-4">
+                    For loop
+                    <div class="intro">
+                        For loops do a loop x amount of times
+                        <br />
+                        Useful when the loop size is known
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+// Increment i to loop forward
+for(let i = 0; i &#60; 10; i++) {
+    console.log(i);
+}
+</pre>
+                        </code>
+                        <button class="run-button" onclick="for(let i = 0; i < 10; i++) {
+                            console.log(i);
+                         }">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>
+<pre>
+// Decrement i to loop backward
+for(let i = 10; i > 0; i--) {
+    console.log(i);
+}
+</pre>
+                        </code>
+                        <button class="run-button" onclick="for(let i = 10; i > 0; i--) {
+                            console.log(i);
+                         }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    While loop
+                    <div class="intro">
+                        While loops do a loop until a condition is met
+                        <br />
+                        Useful when the loop size is unknown / searching for an element
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+let x = 5;
+while(x &#60; 10) {
+    console.log(x);
+    x++;
+}
+</pre>
+                        </code>
+                        <button class="run-button" onclick="let x = 5;
+                        while(x <= 10) {
+                            console.log(x);
+                            x++;
+                        }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    Break
+                    <div class="intro">
+                        Cancel a loop when a condition is met
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>
+<pre>
+let x = [1,2,3,4];
+for(let i = 0; i &#60; x.length; i++) {
+    console.log(i);
+    if(i === 2) {
+        console.log("Broke out of loop on 3rd element");
+        break;
+    }
+}
+</pre>
+                        </code>
+                        <button class="run-button" onclick="let x = [1,2,3,4];
+                        for(let i=0; i < x.length; i++) {
+                            console.log(i);
+                            if(i === 2) {
+                                console.log('Broke out of loop on 3rd element'); 
+                                break; 
+                            } 
+                        }">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!----- QUESTIONS ------>
+        <div id="tutorial-2" style="display: none;">
+            <div class="row">
+                <div class="col-sm-6" id="question-container">
+                    <div id="question-title">Task</div>
+                    <div id="question-question"></div>
+                    <button class="run-button mt-2 float-end" id="next-question"
+                        onclick="nextQuestion(this)">Next</button>
+                </div>
+                <div class="col-sm-6" id="guide-container">
+                    <div id="guide-title">Hints</div>
+                    <div id="question-guide"></div>
+                    <div id="question-hint"></div>
+                    <button class="run-button mt-2 float-end" id="hint" onclick="displayHint(this)">Hint</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                All loops can do the same thing. Some improve readability.
 
-                Tip:
-                For Loop - Useful when the collection size is known / how many times the loop will have to run
-
-                While Loops -
-
-                Useful for searching. For instance navigating up the DOM until a specific element is found.
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                For Loop
-            </div>
-            <div class="col q-cont-r">
-                <pre>
-                <code>
-                    for(let i=0;i&#60;10;i++) {
-                        console.log(i);
-                    }
-                </code>
-            </pre>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2 q-cont-l">
-                While Loop
-            </div>
-            <div class="col q-cont-r">
-
-            </div>
-        </div>
+        <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
+        <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
 
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col" id="question-container">
-                <div id="question-title">Task</div>
-                <div id="question-question"></div>
-            </div>
-            <div class="col" id="guide-container">
-                <div id="guide-title">JS Contents</div>
-                <div id="question-guide">
-                </div>
-                <div id="question-hint"></div>
-            </div>
-        </div>
-    </div>
-
-    <button id="start">Start</button>
 
 
 
-    <div id="further-reading">
-        <div>Further Reading</div>
-        <a href="https://www.w3schools.com/js/js_arrays.asp">w3schools</a>
-    </div>
-    <script src="../js/script.js"></script>
+
+
+    <script>
+        let currentTutorial = 1;
+        let numberOfTutorials = 2;
+        // Tasks
+        let currentQuestionIndex = -1;
+        let numberOfQuestions = 1;
+        let questionsArray = [
+            { id: 1, question: "Create a for loop which adds the variable increment", hints: { guide: "<code>let total = 0;\nfor(let a = 0; a < 20; a++) \n{\n total += a; \n} \nconsole.log(total);</code>" } },
+            { id: 2, question: "Create a while x > 0 decrement x", hints: { guide: "<code><pre>\nlet x = 10;\nwhile(x > 0) {\nconsole.log(x);\nx--;\n}</pre></code>" } }
+        ];
+    </script>
+
+
+    <script src="../js/tutorial-carousel.js"></script>
+    <script src="../js/exercise-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
-
-
-
-
-
-
-<script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    let currentQuestion;
-
-    const renderQuestionContainer = (question) => {
-        currentQuestion = question;
-        document.querySelector("#question-title").innerText = "Question " + question.id;
-        document.querySelector("#question-question").innerText = question.question;
-        document.querySelector("#question-guide").innerHTML = currentQuestion.hints.guide;
-    };
-
-
-
-
-
-
-
-
-    document.querySelector("#start").addEventListener("click", e => {
-        renderQuestionContainer(questions[0]);
-    });
-
-
-
-
-
-
-    let questions = [
-        { id: 1, question: "Find largest value in array", completed: false, hints: { tip: "", guide: "<code>let array = [54,2,35,85,32,12,67]; </code>" } },
-        { id: 2, question: "Find smallest value in array", completed: false },
-        { id: 3, question: "Find mean value in array", completed: false }
-    ];
-
-
-    let questionAnswers = [{
-        qid: 1, a: 12
-    }];
-</script>
 
 </html>

@@ -30,9 +30,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/operations.html" class="dropdown-item">Operands</a></li>
+                            <li><a href="../tasks/conditionals.html" class="dropdown-item">Conditionals</a></li>
                             <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
                             <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
                             <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                            <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -41,34 +44,13 @@
     </nav>
 
     <div class="container-fluid">
+        <div class="cont-title-header">Operands</div>
+
         <div class="row">
-            <div class="cont-title-header">Operations</div>
             <div class="col-sm-4">
-                <div class="intro">
-                    <div>
-                        Assignment
-                    </div>
-                    <div>
-                        Addition
-                    </div>
-                    <div>
-                        Subtraction
-                    </div>
-                    <div>
-                        Multiplication
-                    </div>
-                    <div>
-                        Division
-                    </div>
-                    <div>
-                        Exponential
-                    </div>
-                    <div>
-                        Increment
-                    </div>
-                    <div>
-                        Decrement
-                    </div>
+                <div class="mb-1">Assignment</div>
+                <div class="intro mb-3">
+                    Assign a value to a variable
                 </div>
             </div>
             <div class="col">
@@ -76,40 +58,145 @@
                     <code>let x = 10;</code>
                     <button class="run-button" onclick="let x = 10; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Addition</div>
+                <div class="intro mb-3">
+                    Add two numbers together
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
                     <code>let x = 10 + 5;</code>
                     <button class="run-button" onclick="let x = 10 + 5; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Subtraction</div>
+                <div class="intro mb-3">
+                    Subtract two numbers
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
                     <code>let x = 10 - 5;</code>
                     <button class="run-button" onclick="let x = 10 - 5; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Multiplication</div>
+                <div class="intro mb-3">
+                    Multipliply two numbers together
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
                     <code>let x = 10 * 5;</code>
                     <button class="run-button" onclick="let x = 10 * 5; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Division</div>
+                <div class="intro mb-3">
+                    Divide two numbers
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
                     <code>let x = 10 / 5;</code>
                     <button class="run-button" onclick="let x = 10 / 5; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Exponential</div>
+                <div class="intro mb-3">
+                    Equivalent to Math.pow
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
-                    <code>let x = 10 ** 3;</code>
+                    <code>let x = 10 ** 3; // 10*10*10</code>
                     <button class="run-button" onclick="let x = 10 ** 3; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Increment</div>
+                <div class="intro mb-3">
+                    Increases the value by 1
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
-                    <code>let x = 10; x++</code>
+                    <code>let x = 10; x++;</code>
                     <button class="run-button" onclick="let x = 10; x++; console.log(x)">&#x2192;</button>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="mb-1">Decrement</div>
+                <div class="intro mb-3">
+                    Decreases the value by 1
+                </div>
+            </div>
+            <div class="col">
                 <div class="code-container">
                     <code>let x = 10; x--;</code>
                     <button class="run-button" onclick="let x = 10; x--; console.log(x)">&#x2192;</button>
                 </div>
             </div>
         </div>
+
+
+        <!----- QUESTIONS ------>
+        <div class="row" id="tutorial-5">
+            <div class="col-6" id="question-container">
+                <div id="question-title">Task</div>
+                <div id="question-question"></div>
+                <button class="run-button mt-2 float-end" id="next-question" onclick="nextQuestion(this)">Next</button>
+            </div>
+            <div class="col-6" id="guide-container">
+                <div id="guide-title">Hints</div>
+                <div id="question-guide"></div>
+                <div id="question-hint"></div>
+                <button class="run-button mt-2 float-end" id="hint" onclick="displayHint(this)">Hint</button>
+            </div>
+        </div>
     </div>
 
-    <script src="../js/script.js"></script>
+    <script>
 
+
+
+        // Tasks
+        let currentQuestionIndex = -1;
+        let numberOfQuestions = 5;
+        let questionsArray = [
+            { id: 1, question: "Declare a variable assign it a value of 100", hints: { guide: "<code>let variableName = 100;</code>" } },
+            { id: 2, question: "Add 50 to the previously declared value", hints: { guide: "<code>variableName += 50;</code>" } },
+            { id: 3, question: "Subtract 20.50 to the previously declared value", hints: { guide: "<code>variableName -= 20.50;</code>" } },
+            { id: 4, question: "Assign 15% of the variable value", hints: { guide: "<code>x *= 0.15;</code>" } },
+            { id: 5, question: "Divide the variable by 9", hints: { guide: "<code>x /= 9 // 2.15</code>" } },
+            { id: 6, question: "console.log(yourVariableNameHere.toFixed(2));", hints: { guide: "Should output 2.16 as it is rounded" } },
+        ];
+
+    </script>
+
+
+    <script src="../js/exercise-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>

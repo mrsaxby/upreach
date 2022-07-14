@@ -29,9 +29,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a href="../tasks/basics.html" class="dropdown-item">Basics</a></li>
+                            <li><a href="../tasks/operations.html" class="dropdown-item">Operands</a></li>
+                            <li><a href="../tasks/conditionals.html" class="dropdown-item">Conditionals</a></li>
                             <li><a href="../tasks/functions.html" class="dropdown-item">Functions</a></li>
                             <li><a href="../tasks/arrays.html" class="dropdown-item">Arrays</a></li>
                             <li><a href="../tasks/loops.html" class="dropdown-item">Loops</a></li>
+                            <li><a href="../tasks/objects.html" class="dropdown-item">Objects</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -42,44 +45,52 @@
 
 
 
-
-
-
     <div class="container-fluid">
-        <div class="row" id="tutorial-1">
-            <div class="cont-title-header">Comments</div>
-            <div class="col-6 mb-5">
-                Comments are used for describing the code and to make
-                it more readable
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>// Some descriptive text that describes what the code is doing</code>
+        <div id="tutorial-1">
+            <div class="row">
+                <div class="cont-title-header">Comments</div>
+                <div class="col-sm-6 mb-5">
+                    Comments are used for describing the code and to make
+                    it more readable
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>// Some descriptive text that describes what the code is doing</code>
+                    </div>
+                    <div class="code-container">
+                        <code>// This function returns the result of two numbers multipled together
+                        <br />
+                        const multiply = (num1, num2) => num1*num2;
+                    </code>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                JavaScript comments can also be used to prevent execution
-                <div class="intro mt-1">
-                    Comment out a single line: Double slashes: //
-                    <br />
-                    Comment out multiple lines: Slashes with an asterix: /* Are used for JS comments */
-                    <br />
-                    The line(s) will not be executed
+            <div class="row">
+                <div class="col-sm-6">
+                    JavaScript comments can also be used to prevent execution
+                    <div class="intro mt-1">
+                        <div class="mb-1">
+                            Comment out a single line: Double slashes: //
+                        </div>
+                        <div class="mb-1">
+                            Comment out multiple lines: Slashes with an asterix: /* Are used for JS comments */
+                        </div>
+                        The line(s) will not be executed
+                    </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>//console.log("I wont run as I am commented out");</code>
-                    <button class="run-button"
-                        onclick="//console.log('I wont run as I am commented out')">&#x2192;</button>
-                </div>
-                <div class="code-container">
-                    <code>console.log("I will run as I am not commented out");</code>
-                    <button class="run-button"
-                        onclick="console.log('I will run as I am not commented out')">&#x2192;</button>
-                </div>
-                <div class="code-container">
-                    <code>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>//console.log("I wont run as I am commented out");</code>
+                        <button class="run-button"
+                            onclick="//console.log('I wont run as I am commented out')">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>console.log("I will run as I am not commented out");</code>
+                        <button class="run-button"
+                            onclick="console.log('I will run as I am not commented out')">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>
 <pre>
 /*
     This declares a variable and changes its value
@@ -90,183 +101,210 @@
 */
 </pre>
                     </code>
-                    <button class="run-button" onclick="">&#x2192;</button>
+                        <button class="run-button" onclick="">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorial-2" style="display: none;">
+            <div class="row">
+                <div class="cont-title-header">Variables</div>
+                <div class="col-sm-6 mb-5">
+                    Variable names should be:
+                    <div class="intro">
+                        <div>Unique</div>
+                        <div>Must begin with a letter</div>
+                        <div>Case sensitive</div>
+                        <div>Usually camelCased</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    let
+                    <div class="intro mb-5">
+                        Usual declaration
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let currentTime = new Date(Date.now());</code>
+                        <button class="run-button"
+                            onclick="let currentTime = new Date(Date.now()); console.log(currentTime)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>const</div>
+                    <div class="intro mb-5">
+                        Values that don't change (Number of months, Pi etc.)
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>const numberOfMonths = 12;</code>
+                        <button class="run-button"
+                            onclick="const numberOfMonths = 12; console.log(numberOfMonths)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div>var</div>
+                    <div class="intro mb-5">
+                        Similar to let read more <a
+                            href="https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var"
+                            target="_blank">here</a>:
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="row" id="tutorial-2" style="display: none;">
-            <div class="cont-title-header">Variables</div>
-            <div class="col-6 mb-5">
-                Variable names should be:
-                <div class="intro">
-                    <div>Unique</div>
-                    <div>Must begin with a letter</div>
-                    <div>Case sensitive</div>
-                    <div>Usually camelCased</div>
-                </div>
-            </div>
-            <div class="col-6">
-            </div>
+        <div id="tutorial-3" style="display: none;">
 
-            <div class="col-6">
-                let
-                <div class="intro mb-5">
-                    Usual declaration
+            <div class="row">
+                <div class="cont-title-header">Data Types</div>
+                <div class="col-sm-6">
+                    string
+                    <div class="intro mb-5">
+                        Text wrapped around ('single' or "double quotes") will be stored as a string
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let stringVal = "I am a string";</code>
+                        <button class="run-button"
+                            onclick="let stringVal = 'I am a string'; console.log(stringVal)">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let currentTime = new Date(Date.now());</code>
-                    <button class="run-button"
-                        onclick="let currentTime = new Date(Date.now()); console.log(currentTime)">&#x2192;</button>
+            <div class="row">
+                <div class="col-sm-6">
+                    number
+                    <div class="intro mb-5">
+                        1234 - is a number
+                        <br />
+                        "1234" - is a string
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let numberVal = 1234; typeof numberVal;</code>
+                        <button class="run-button"
+                            onclick="let numberVal = 1234; console.log(numberVal); console.log(typeof numberVal);">&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>let numberVal = "1234"; typeof numberVal;</code>
+                        <button class="run-button"
+                            onclick="let numberVal = '1234'; console.log(numberVal); console.log(typeof numberVal);">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-6">
-                <div>const</div>
-                <div class="intro mb-5">
-                    Values that don't change (Number of months, Pi etc.)
+            <div class="row">
+                <div class="col-sm-6">
+                    boolean
+                    <div class="intro mb-5">
+                        A boolean is either true or false
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let booleanVal = false;</code>
+                        <button class="run-button"
+                            onclick="let booleanVal = false; console.log(booleanVal)">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>const numberOfMonths = 12;</code>
-                    <button class="run-button"
-                        onclick="const numberOfMonths = 12; console.log(numberOfMonths)">&#x2192;</button>
+            <div class="row">
+                <div class="col-sm-6">
+                    undefined
+                    <div class="intro mb-5">
+                        A variable that has been declared without a value will have the data type undefined
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let undefinedVal;</code>
+                        <button class="run-button"
+                            onclick="let undefinedVal; console.log(undefinedVal)">&#x2192;</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div>var</div>
-                <div class="intro mb-5">
-                    Similar to let read more <a
-                        href="https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var"
-                        target="_blank">here</a>:
+            <div class="row">
+                <div class="col-sm-6">
+                    object
+                    <div class="intro mb-5">
+                        Uses key:value to store associated values
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let objectVal = {id: 1, name: 'Sonos Speaker', volume: 5 };</code>
+                        <button class="run-button"
+                            onclick="var objectVal = {id: 1, name: 'Sonos Speaker', volume: 5 }; console.log(objectVal)">&#x2192;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    array
+                    <div class="intro mb-5">
+                        Stores multiple datatypes within the array
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>let arrayVal = ['string', 22, {id: 1, name: 'Sonos Speaker', volume: 5 }];</code>
+                        <button class="run-button"
+                            onclick="let arrayVal = ['string', 22, {id: 1, name: 'Sonos Speaker', volume: 5 }]; console.log(arrayVal)">&#x2192;</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <div class="row" id="tutorial-3" style="display: none;">
-            <div class="cont-title-header">Data Types</div>
-            <div class="col-6">
-                string
-                <div class="intro mb-5">
-                    Text wrapped around ('single' or "double quotes") will be stored as a string
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let stringVal = "I am a string";</code>
-                    <button class="run-button"
-                        onclick="let stringVal = 'I am a string'; console.log(stringVal)">&#x2192;</button>
-                </div>
-            </div>
-            <div class="col-6">
-                number
-                <div class="intro mb-5">
-                    1234 - is a number
+        <div id="tutorial-4" style="display: none;">
+            <div class="row">
+                <div class="cont-title-header">Console</div>
+                <div class="col-sm-6 mb-5">
+                    Parameters can be passed into the console.log() function
                     <br />
-                    "1234" - is a string
+                    This is useful for identifying the value of the variables
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let numberVal = 1234; typeof numberVal;</code>
-                    <button class="run-button"
-                        onclick="let numberVal = 1234; console.log(numberVal); console.log(typeof numberVal);">&#x2192;</button>
-                </div>
-                <div class="code-container">
-                    <code>let numberVal = "1234"; typeof numberVal;</code>
-                    <button class="run-button"
-                        onclick="let numberVal = '1234'; console.log(numberVal); console.log(typeof numberVal);">&#x2192;</button>
-                </div>
-            </div>
-
-            <div class="col-6">
-                boolean
-                <div class="intro mb-5">
-                    A boolean is either true or false
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let booleanVal = false;</code>
-                    <button class="run-button"
-                        onclick="let booleanVal = false; console.log(booleanVal)">&#x2192;</button>
-                </div>
-            </div>
-
-            <div class="col-6">
-                undefined
-                <div class="intro mb-5">
-                    A variable that has been declared without a value will have the data type undefined
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let undefinedVal;</code>
-                    <button class="run-button" onclick="let undefinedVal; console.log(undefinedVal)">&#x2192;</button>
-                </div>
-            </div>
-
-            <div class="col-6">
-                object
-                <div class="intro mb-5">
-                    Uses key:value to store associated values
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let objectVal = {id: 1, name: 'Sonos Speaker', volume: 5 };</code>
-                    <button class="run-button"
-                        onclick="var objectVal = {id: 1, name: 'Sonos Speaker', volume: 5 }; console.log(objectVal)">&#x2192;</button>
-                </div>
-            </div>
-
-            <div class="col-6">
-                array
-                <div class="intro mb-5">
-                    Stores multiple datatypes within the array
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>let arrayVal = ['string', 22, {id: 1, name: 'Sonos Speaker', volume: 5 }];</code>
-                    <button class="run-button"
-                        onclick="let arrayVal = ['string', 22, {id: 1, name: 'Sonos Speaker', volume: 5 }]; console.log(arrayVal)">&#x2192;</button>
+                <div class="col-sm-6">
+                    <div class="code-container">
+                        <code>console.log("Output to the console");</code>
+                        <button class="run-button" onclick='console.log("Output to the console")'>&#x2192;</button>
+                    </div>
+                    <div class="code-container">
+                        <code>console.table({shape: "cube", w: 5, h: 5, area: 25});</code>
+                        <button class="run-button"
+                            onclick='console.table({shape: "square", w: 5, h: 5, area: 25});'>&#x2192;</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" id="tutorial-4" style="display: none;">
-            <div class="cont-title-header">Console</div>
-            <div class="col-6 mb-5">
-                Parameters can be passed into the console.log() function
-                <br />
-                This is useful for identifying the value of the variables
-            </div>
-            <div class="col-6">
-                <div class="code-container">
-                    <code>console.log("Output to the console");</code>
-                    <button class="run-button" onclick='console.log("Output to the console")'>&#x2192;</button>
+        <!----- QUESTIONS ------>
+        <div id="tutorial-5" style="display: none;">
+            <div class="row">
+                <div class="col-sm-6" id="question-container">
+                    <div id="question-title">Task</div>
+                    <div id="question-question"></div>
+                    <button class="run-button mt-2 float-end" id="next-question"
+                        onclick="nextQuestion(this)">Next</button>
                 </div>
-                <div class="code-container">
-                    <code>console.table({shape: "cube", w: 5, h: 5, area: 25});</code>
-                    <button class="run-button"
-                        onclick='console.table({shape: "square", w: 5, h: 5, area: 25});'>&#x2192;</button>
+                <div class="col-sm-6" id="guide-container">
+                    <div id="guide-title">Hints</div>
+                    <div id="question-guide"></div>
+                    <div id="question-hint"></div>
+                    <button class="run-button mt-2 float-end" id="hint" onclick="displayHint(this)">Hint</button>
                 </div>
             </div>
-
-
-
         </div>
-
-
 
         <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
         <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
@@ -277,76 +315,30 @@
 
 
 
+
+
     <script>
-
+        // Carosel
         let currentTutorial = 1;
-        let numberOfTutorials = 4;
-
-        const nextTutorial = (e) => {
-            currentTutorial++;
-            displayTutorial();
-        }
-
-        const previousTutorial = (e) => {
-            currentTutorial--;
-            displayTutorial();
-        }
+        let numberOfTutorials = 5;
 
 
-        const tutorialButtons = () => {
-            const prevButton = document.getElementById("tutorial-previous");
-            const nextButton = document.getElementById("tutorial-next");
-
-            if (currentTutorial <= 1) {
-                prevButton.disabled = true;
-            }
-            else {
-                prevButton.disabled = false;
-            }
-
-            if (currentTutorial >= numberOfTutorials) {
-                nextButton.disabled = true;
-            }
-            else {
-                nextButton.disabled = false;
-            }
-        }
-
-
-        function displayTutorial() {
-            tutorialButtons();
-            for (let i = 1; i <= numberOfTutorials; i++) {
-                if (currentTutorial === i) {
-                    document.getElementById("tutorial-" + currentTutorial).style.display = "flex";
-                }
-                else {
-                    document.getElementById("tutorial-" + i).style.display = "none";
-                }
-            }
-        }
-
-
-
-
-
+        // Tasks
+        let currentQuestionIndex = -1;
+        let numberOfQuestions = 2;
+        let questionsArray = [
+            { id: 1, question: "Declare a variable with the value of 20", hints: { guide: "<code>let variableName = 20; </code>" } },
+            { id: 2, question: "Output the value of the variable to the console", hints: { guide: "<code>console.log(variableName); </code>" } },
+            { id: 3, question: "Reassign the value of the variable to a string", hints: { guide: "<code>variableName = 'Changed the value'; </code>" } }
+        ];
 
     </script>
 
-
-
-
-
-    <script src="../js/script.js"></script>
-
-
-
+    <script src="../js/tutorial-carousel.js"></script>
+    <script src="../js/exercise-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
-
-
-
-
 
 </html>
