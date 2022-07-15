@@ -1,5 +1,3 @@
-<!-- UPREACH SKILL recording SCOTT JONES -->
-
 <!DOCTYPE html>
 <html>
 
@@ -124,8 +122,6 @@ console.log(objectArray[1].post_code);
             </div>
         </div>
 
-
-
         <!----- QUESTIONS ------>
         <div id="tutorial-2" style="display: none;">
             <div class="row">
@@ -146,13 +142,7 @@ console.log(objectArray[1].post_code);
 
         <button class="run-button" onclick="previousTutorial(this)" disabled id="tutorial-previous">Previous</button>
         <button class="run-button" onclick="nextTutorial(this)" id="tutorial-next">Next</button>
-
     </div>
-
-
-
-
-
 
     <script>
         let currentTutorial = 1;
@@ -162,7 +152,7 @@ console.log(objectArray[1].post_code);
         let numberOfQuestions = 1;
         let questionsArray = [
             { id: 1, question: "Create an object with a key and change the value of it", hints: { guide: '<code><pre>let obj = { name: "Exercise 1 started" }; \nobj.name = "Exercise 1 finished";\nconsole.log(obj);</pre></code> ' } },
-            { id: 2, question: "Create a rectangle object which has a width and height", hints: { guide: "<code><pre>const area = (w,h) => w*h;\nlet square = { width: 5, height: 8, area: area(5,8)};\nconsole.log(square.area)</pre></code>" } }
+            { id: 2, question: "Create a rectangle object which has a width and height and area. Create a function that calculates the area (w*h)", hints: { guide: "<code><pre>const area = (w,h) => w*h;\nlet square = { width: 5, height: 8, area: area(5,8)};\nconsole.log(square.area)</pre></code>" } }
         ];
     </script>
 
